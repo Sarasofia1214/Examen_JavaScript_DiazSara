@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./storage/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
+    <div class="encabezado">
+        <div><img class="logo" src="./storage/img/logo.avif" alt=""></div>
+        <h2><a href="">Favoritos</a></h2>
+        <h2>Sobre Nosotros</h2>
+        <h2>Buscar</h2>
+        <div class="encabezado_guardar">Recetas</div>
+    </div>
+
+    <h1>Recetas De La Abuela</h1>
+
+    <div class="todo">
+        <div id="container_comida" class="container_comida"></div>
+        <template id="template_comida">
+          <div class="Receta">
+            <img class="foto" src="./storage/img/logo.avif" alt="foto" width="80" />
+            <div class="container_derecha">
+              <div class="encabezado_receta">
+                <p class="nombre_categoria">Nombre</p>
+                <p class="nombre">Nombre</p>
+              </div>
+              <div class="body_receta">
+                <video class="video" src=""></video>  
+                <p class="tags">vdada</p>
+              </div>
+            </div>
+          </div>
+        </template>
+    </div>
+
+    <!-- Se pone en css display=none y para trabajar en el pasa a flex
+        <div id="tarjeta_info" class="tarjeta_info">
+          <h3>Receta</h3>
+          <img id="foto_info" src="" width="100" alt="foto cantante" />
+          <p><strong>Nombre:</strong> <span id="nombre_info"></span></p>
+          <p><strong>País:</strong> <span id="pais_info"></span></p>
+          <p><strong>Género:</strong> <span id="genero_info"></span></p>
+           <button id="btn_cerrar">Cerrar</button>
+        </div>
+         -->
     
 </body>
 <script src="./js/js.js"></script>
