@@ -6,6 +6,10 @@
     font-family: "Font2";
     src: url(../storage/Fonts/Gabarito-SemiBold-BF651cdf1f23841.ttf);
 }
+@font-face {
+    font-family: "Font3";
+    src: url(../storage/Fonts/Gabarito-VariableFont_wght-BF651cdf1f55e6c.ttf);
+}
 body{
     margin: 0%;
     padding: 0%;
@@ -36,7 +40,7 @@ body{
     margin-top: -5vw;
 }
 .encabezado_guardar{
-    background-color: #a88a04;
+    background-color: #400d70;
     padding: 1vw;
     padding-inline-start: 3vw;
     padding-inline-end: 3vw;
@@ -53,73 +57,99 @@ a{
     color: black;
 }
 
-
-.todo{
-    background-color: #28887A;
- 
-}
 .container_comida {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 4vw;
+    padding: 1vw;
   }
   
   .Receta{
     display: flex;
-    flex-direction: row;
+
     gap: 10px;
     padding: 15px;
-    border: 1px solid #ccc;
-    background-color: #fdfdfd;
-    border-radius: 10px;
+    background-color: #e9e2fa;
+    border-radius: 4px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: transform 0.2s;
+ 
   }
   .Receta:hover {
     transform: scale(1.02);
   }
-  
+  .encabezado_receta{
+justify-content: center;
+text-align: center;
+font-family: "Font";
+margin-left: 1.5vw;
+width: fit-content;
+  }
   
   .foto {
-    width: 100px;
-    height: 100px;
+    width: 10vw;
+    height: fit-content;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 3px;
   }
+  
+  .nombre {
+    font-size: 1vw;
+  }
+  .container_derecha{
+    display: flex;
+    justify-content: center;
+  }
+
   
 
-  .encabezado_receta{
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-  }
-  .nombre {
-    font-weight: bold;
-  }
-  .body_piloto {
-    text-align: left;
-  }
-  
-  
   .tarjeta_info {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 20px;
-    z-index: 1000;
-    width: 90%;
-    max-width: 350px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    border: 3px solid #000000;
+
+
   }
   .tarjeta_info img {
-    width: 100%;
+    width: 30%;
     border-radius: 6px;
     margin-bottom: 10px;
+    justify-content: center;
+    align-content: center;
   }
   
+  h1{
+    text-align: center;
+    margin: 2vw;
+    font-size: 3vw;
+    font-family: "Font";
+  }
+  h3{
+    font-size: 2vw;
+    font-family: "Font3";
+    text-align: center;
+}
+p.tarjeta_info{
+    font-family: "Font";
+    font-size: 1vw;
+}
+.tarjeta_text{
+    font-size: 1vw;
+    font-family: "Font";
+    font-weight: lighter;
+}
+#cerrar{
+    background-color: #400d70;
+    border: none;
+    border-radius: 2px;
+    padding: 0.5vw;
+    color: white                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+    
+}

@@ -12,9 +12,9 @@ fetch (api)
         const clone = plantilla.content.cloneNode(true);
   
   
-        clone.querySelector('.nombre').src = receta.strMeal || '';
+        clone.querySelector('.nombre').textContent = `Nombre: ${receta.strMeal}` || 'Nombre Secreto';
         clone.querySelector('.foto').src = receta.strMealThumb|| '';
-        clone.querySelector('.nombre_categoria').textContent = receta.strCategory;
+        clone.querySelector('.nombre_categoria').textContent = `Tipo: ${receta.strCategory}`;
         clone.querySelector('.video').src = receta.strYoutube || '';
         clone.querySelector('.tags').textContent = receta.strTags;
   
@@ -44,8 +44,8 @@ fetch (api)
       }
       
       
-      document.getElementById('btn_cerrar').onclick = () => {
-        modal.style.display = 'none';
+      document.getElementById('cerrar').onclick = () => {
+        more_info.style.display = 'none';
       };
       
       
