@@ -3,24 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Buscart</title>
 </head>
 <body>
-
-    <div class="todo">
-        <div id="container_comida" class="container_comida"></div>
-        <div id="template_comida">
-          <div class="Receta">
-            <img class="foto" src="./storage/img/logo.avif" alt="foto" width="80" />
-            <div class="container_derecha">
-                <p class="nombre"></p>
-                <p class="nombre_categoria"></p>
-                <p class="tags"></p>
-            </div>
-            </div>
-          </div>
-        </div>
+    <div class="encabezado">
+        <div><img class="logo" src="../storage/img/logo.avif" alt=""></div>
+        <h2><a href="">Favoritos</a></h2>
+        <h2>Sobre Nosotros</h2>
+        <h2><a href="./index/buscar.html">Buscar</a></h2>
+        <div class="encabezado_guardar">Recetas</div>
     </div>
-    
+
+    <div class="busqueda_comida">
+       
+        <label for="">Especie</label>
+            <select class="especie_select">
+            <option disabled selected value="">Any</option>
+            <option value="dog">Perro</option>
+            <option value="cat">Gato</option>
+            <option value="rabbit">Conejo</option>
+            <option value="birds">Pequeño y peludo</option>
+            <option value="birds">Caballos</option>
+            <option value="birds">Peces</option>
+            <option value="birds">Corral</option>
+            </select>
+    </div>
+
+
+    <div class="busqueda_conteiner_edad">
+   
+        <label for="edad">Edad</label><img src="" alt="">
+            <select class="especie_select">
+            <option disabled selected value="">Any</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="adulto">Adulto</option>
+            <option value="Senior">Conejo</option>
+            <option value="birds">Pajaro</option>
+            </select>
+    </div>
+
+
+    <div class="busqueda_conteiner_ciudad">
+        <label for="cuidad">Cuidad</label>
+            <select class="especie_select">
+            <option disabled selected value="">Any</option>
+            <option value="dog">USA</option>
+           
+            </select>
+    </div>
+</div>
+
+</div>
+
+
 </body>
 </html>
